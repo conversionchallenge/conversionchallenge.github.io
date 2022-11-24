@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Tab icon and title -->
+	<title>ACC2023: Accent Conversion Challenge 2023</title>
+
+	<!-- bootstrap template -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+
+	<!-- Google fonts -->
+	<link href="./css/font.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+
+	<div id="header">
+		<!-- <a href="https://www.cuhk.edu.cn/en" target="_blank">
+		<img src="./imgs/cuhk-sz.jpeg" style="height:80px; float: left; margin-left: 20px;">
+	</a>
+		<a href="https://sds.cuhk.edu.cn/en" target="_blank">
+		<img src="./imgs/sds.png" style="height:80px; float: right; margin-right: 20px;">
+		</a> -->
+		<br>
+		<br>
+
+		<h1>ACC 2023: Accent Conversion Challenge 2023</h1>
+		<!-- <div class="text-center">
+			<h4>A Special Session at INTERSPEECH 2023</h4>
+		</div> -->
+		<br>
+		<br>
+
+		<div style="clear:both;"></div>
+	</div>
+
+	<!-- <div>
+		<img style="width:100%; height:auto" src="./imgs/visual_analytics.png">
+	</div> -->
+
+	<div class="sechighlight">
+		<div class="container sec">
+			<!-- <h2>Description</h2> -->
+			<div id="coursedesc">
+				<br>
+				<p>
+					We are pleased to invite you to participate in the Accent Conversion Challenge (ACC) 2023. The ACC 2023 is to evaluate different accent conversion systems on the same dataset.
+				</p>
+
+				<p>
+Accent conversion is a technique to modify a speech waveform of a source accent to sound as if the speaker has a target accent. To develop this technique, it is important to understand how to factorize speech acoustics into individual components on linguistic (pronunciation), speaker identity, accent pattern, and para-linguistic information effectively using various technologies. Accent conversion has shown its potential in entertainment, real-time communication, and so on. It is worthwhile to study this technique for both scientific purposes and industrial applications.
+
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container sec">
+		<h2>Task</h2>
+		<p>
+			The task for the ACC 2023 is to convert Chinese-accented speech to sound like an American accent. Ideally, accent conversion only changes the accent without modifying the speaker's identity. To broaden participation, the ACC 2023 provides a target speaker for reference. The converted speech can sound similar to the target speaker. If the participating team prefers, the converted speech can sound like the source speaker.  The task contains three phases.
+			<li><b><font color="black">Training phase:</font></b> During the training stage, the organizers will release speech recordings of 16 speakers with Chinese accent, and 1 speaker with American accent to participants for development purposes.</li>
+			<li><b><font color="black">Conversion phase:</font></b> During the conversion phase, 6 source speakers’ voices not seen in the development set will be released to participants. The participants will be asked to submit converted samples for formal evaluation.</li>
+			<li><b><font color="black">Evaluation phase:</font></b>  During the evaluation phase, the submitted samples from the participants will be evaluated in terms of perceived naturalness, accent identification, and speaker similarity via listening tests with over 200 listeners. The aggregated listening test results will be returned to participants.</li>
+		</p>
+	</div>
+
+	<div class="sechighlight">
+			<div class="container sec">
+				<h2>Data</h2>
+				<div id="coursedesc">
+					<p>
+						The training data is English and contains 17 speakers, including 16 native Chinese speakers and one native American English speaker that is from the LJSpeech. Each speaker has 800 utterances. The sampling rate is 24 kHz. We also provide two additional speakers for development purposes, but cannot be used for model training.
+The evaluation data contains 6 speakers, three male and three female speakers.
+
+					</p>
+				</div>
+
+				<h2>Instructions</h2>
+				<div id="coursedesc">
+					<p>
+					<li>The sample rate of the submitted samples need to be 24 kHz or lower.</li>
+					<li>It is NOT allowed to perform any manual edition or modification after conversion.</li>
+					<li>It is NOT allowed to use any manual annotations on the evaluation data. The manual annotations include but are not limited to phoneme labels, phoneme boundaries, linguistic information, etc.</li>
+					<li>In the ACC 2023, it is NOT allowed to use any additional data. Only the utterances from the training set can be used to train the conversion model. If a model (e.g. ASR model) is trained by additional data, it can NOT be used as well.</li>
+					<li>Each participating team can only submit one entry. If participants are involved in joint projects who wish to submit multiple entries, please request confirmation from the organizers in advance.</li>
+					<li>Participants need to complete a survey to provide the technical specifications of the conversion system used in the challenge.</li>
+					<li>Should you have any questions about these rules, feel free to contact the organizers via acc2023@conversionchallenge.org, or ask in the Slack channel</li>
+					</p>
+				</div>
+
+			</div>
+	</div>
+
+	<div class="container sec">
+		<br>
+		<h2>Timeline</h2>
+		<p>
+			<li>November 28th: release of training data used for building accent conversion systems</li>
+			<li>February 6th: release of evaluation data (source speakers) to be converted</li>
+			<li>February 13th: deadline to submit the converted audio to the organizers with system description</li>
+			<li>February 20th: notification of subjective evaluation results</li>
+			<li>March 1st: organizers and participants have 10 days to write and submit a paper for the special session</li>
+			<li>March 8th: organizers and participants have 17 days to update their papers for the special session</li>
+		</p>
+
+		<br>
+		<h2>Organizers</h2>
+		<p>
+			<li>Zhizheng Wu (Chinese University of Hong Kong, Shenzhen, China)</li>
+			<li>Shaojin Ding (Google, USA)</li>
+			<li>Wei Ping (Nvidia, USA)</li>
+			<li>Yi Zhou (National University of Singapore, Singapore)</li>
+		</p>
+
+		<br>
+		<h2>Contact</h2>
+		<p>
+			Email: acc2023@conversionchallenge.org
+		</p>
+	</div>
+
+	<div class="">
+		<div class="container sec"> </div>
+	</div>
+
+	<!-- jQuery and Boostrap -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
